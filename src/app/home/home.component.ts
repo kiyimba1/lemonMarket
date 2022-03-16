@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
     <div class="column" fxLayoutAlign="center center">
       <span class="mat-display-2">Hello, Ed!</span>
       <br />
-      <button mat-raised-button color="primary">Login</button>
+      <button mat-raised-button color="primary" routerLink="/manager">Login as Manager</button>
     </div>
   `,
   styles: [`

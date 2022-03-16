@@ -30,7 +30,8 @@ import { HttpClientModule } from '@angular/common/http';
     InventoryModule,
     PosModule,
     UserModule,
-    HttpClientModule
+    HttpClientModule,
+    ManagerModule
   ],
   providers: [],
   bootstrap: [AppComponent]
