@@ -27,7 +27,7 @@
               "src/assets"
             ],
             "styles": [
-              "src/custom-theme.scss",
+              "src/lemonmart-theme.scss",
               "src/styles.css"
             ],
             "scripts": []
