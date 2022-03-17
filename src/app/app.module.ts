@@ -1,3 +1,5 @@
+import { InMemoryAuthService } from './auth/auth.inmemory.service';
+import { AuthService } from './auth/auth.service';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -24,7 +26,12 @@ import { HttpClientModule } from '@angular/common/http';
     FlexLayoutModule,
     HttpClientModule,
   ],
-  providers: [],
+  providers: [
+    {
+      provide: AuthService,
+      useClass: InMemoryAuthService
+    }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
