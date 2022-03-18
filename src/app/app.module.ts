@@ -1,3 +1,5 @@
+import { ReactiveFormsModule } from '@angular/forms';
+import { AuthHttpIntercetor } from './auth/auth-http-interceptor';
 import { InMemoryAuthService } from './auth/auth.inmemory.service';
 import { AuthService } from './auth/auth.service';
 import { NgModule } from '@angular/core';
@@ -10,13 +12,15 @@ import { MaterialModule } from './material.module';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { HomeComponent } from './home/home.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
@@ -25,8 +29,14 @@ import { HttpClientModule } from '@angular/common/http';
     MaterialModule,
     FlexLayoutModule,
     HttpClientModule,
+    ReactiveFormsModule,
   ],
   providers: [
+    {
+      provide: HTTP_INTERCEPTORS,
+      useClass: AuthHttpIntercetor,
+      multi: true,
+    },
     {
       provide: AuthService,
       useClass: InMemoryAuthService
