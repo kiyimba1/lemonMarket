@@ -15,7 +15,8 @@ import { FlexLayoutModule } from '@angular/flex-layout'
 import { HomeComponent } from './home/home.component'
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component'
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http'
-import { LoginComponent } from './login/login.component'
+import { LoginComponent } from './login/login.component';
+import { NavigationMenuComponent } from './navigation-menu/navigation-menu.component'
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { LoginComponent } from './login/login.component'
     PageNotFoundComponent,
     LoginComponent,
     SimpleDialogComponent,
+    NavigationMenuComponent,
   ],
   imports: [
     BrowserModule,
