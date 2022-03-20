@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core'
 import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms'
 import { SubSink } from 'subsink'
 import { AuthService } from '../auth/auth.service'
+import { Role } from '../auth/auth.enum'
 
 @Component({
   selector: 'app-login',
@@ -75,9 +76,26 @@ export class LoginComponent implements OnInit {
 
           this.uiService.showToast(`Welcome ${user.fullName}! Role: ${user.role}`)
           // this.uiService.showDialog(`Welcome ${user.fullName}!`, `Role: ${user.role}`)
-          this.router.navigate([this.router.navigate([this.redirectUrl || '/manager'])])
+          this.router.navigate([
+            this.router.navigate([
+              this.redirectUrl || this.homeRoutePerRole(user.role as Role),
+            ]),
+          ])
         })
       )
       .subscribe()
+  }
+
+  private homeRoutePerRole(role: Role) {
+    switch (role) {
+      case Role.Cashier:
+        return '/pos'
+      case Role.Clerk:
+        return '/inventory'
+      case Role.Manager:
+        return '/manager'
+      default:
+        return '/user/profile'
+    }
   }
 }
