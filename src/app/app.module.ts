@@ -1,3 +1,4 @@
+import { FirebaseAuthService } from './auth/auth.firebase.service'
 import { UiService } from './common/ui.service'
 import { SimpleDialogComponent } from './common/simple-dialog.component'
 import { ReactiveFormsModule } from '@angular/forms'
@@ -15,8 +16,11 @@ import { FlexLayoutModule } from '@angular/flex-layout'
 import { HomeComponent } from './home/home.component'
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component'
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http'
-import { LoginComponent } from './login/login.component';
+import { LoginComponent } from './login/login.component'
 import { NavigationMenuComponent } from './navigation-menu/navigation-menu.component'
+import { initializeApp, provideFirebaseApp } from '@angular/fire/app'
+import { environment } from '../environments/environment'
+import { provideAuth, getAuth } from '@angular/fire/auth'
 
 @NgModule({
   declarations: [
@@ -35,6 +39,8 @@ import { NavigationMenuComponent } from './navigation-menu/navigation-menu.compo
     FlexLayoutModule,
     HttpClientModule,
     ReactiveFormsModule,
+    provideFirebaseApp(() => initializeApp(environment.firebase)),
+    provideAuth(() => getAuth()),
   ],
   providers: [
     // {
@@ -44,7 +50,7 @@ import { NavigationMenuComponent } from './navigation-menu/navigation-menu.compo
     // },
     {
       provide: AuthService,
-      useClass: InMemoryAuthService,
+      useClass: FirebaseAuthService,
     },
     {
       provide: UiService,

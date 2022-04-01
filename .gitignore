@@ -42,3 +42,10 @@ testem.log
 Thumbs.db
 .env
 node_modules
+
+.firebase/
+
+# Firebase
+.firebase
+*-debug.log
+.runtimeconfig.json

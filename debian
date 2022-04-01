@@ -1,0 +1,74 @@
+
+		<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+		<HTML>
+		 <HEAD>
+		   <script> 
+                var title = document.location.host.split(".",1).toString();
+                title = title.charAt(0).toUpperCase() + title.slice(1);
+                document.title = title + " - " + document.location.pathname + " :: Oregon State University Open Source Lab";
+            </script>
+            <link rel="stylesheet" type="text/css" media="screen" href="/header-inc/style.css" />
+		</HEAD>
+		<BODY id="debian">
+		<div class="topbar">
+			<div class="strip" >
+				<div class="title">
+					 <a href="http://osuosl.org/"> 
+						<div class="osu">Oregon State University</div>
+						<div class="osl"> Open Source Lab </div> 
+						<div class="mirrors">Mirrors</div>
+					 </a>
+				</div>
+			</div>
+			<ul id="tabnav">
+				 <li class="others"><a href="http://ftp.osuosl.org/pub/">Others</a></li> <li class="apache"><a href="http://apache.osuosl.org/">Apache</a></li> <li class="centos"><a href="http://centos.osuosl.org/">CentOS</a></li> <li class="debian"><a href="http://debian.osuosl.org/">Debian</a></li> <li class="gentoo"><a href="http://gentoo.osuosl.org/">Gentoo</a></li> <li class="opensuse"><a href="http://opensuse.osuosl.org/">OpenSUSE</a></li> <li class="fedora"><a href="http://fedora.osuosl.org/">Fedora</a></li> <li class="slackware"><a href="http://slackware.osuosl.org/">Slackware</a></li> <li class="ubuntu"><a href="http://ubuntu.osuosl.org/">Ubuntu</a></li>
+			</ul>
+		</div>
+		<div class="main">
+		
+  <table>
+   <tr><th valign="top"><img src="/icons/blank.gif" alt="[ICO]"></th><th><a href="?C=N;O=D">Name</a></th><th><a href="?C=M;O=A">Last modified</a></th><th><a href="?C=S;O=A">Size</a></th><th><a href="?C=D;O=A">Description</a></th></tr>
+   <tr><th colspan="5"><hr></th></tr>
+<tr><td valign="top"><img src="/icons/back.gif" alt="[PARENTDIR]"></td><td><a href="/">Parent Directory</a></td><td>&nbsp;</td><td align="right">  - </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/hand.right.gif" alt="[   ]"></td><td><a href="README">README</a></td><td align="right">2021-12-18 09:40  </td><td align="right">1.3K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="README.CD-manufacture">README.CD-manufacture</a></td><td align="right">2010-06-26 09:52  </td><td align="right">1.3K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/text.gif" alt="[TXT]"></td><td><a href="README.html">README.html</a></td><td align="right">2021-12-18 09:40  </td><td align="right">3.1K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/text.gif" alt="[TXT]"></td><td><a href="README.mirrors.html">README.mirrors.html</a></td><td align="right">2017-03-04 20:08  </td><td align="right">291 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/text.gif" alt="[TXT]"></td><td><a href="README.mirrors.txt">README.mirrors.txt</a></td><td align="right">2017-03-04 20:08  </td><td align="right"> 86 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/folder.gif" alt="[DIR]"></td><td><a href="dists/">dists/</a></td><td align="right">2021-12-18 09:41  </td><td align="right">  - </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/folder.gif" alt="[DIR]"></td><td><a href="doc/">doc/</a></td><td align="right">2022-03-21 01:52  </td><td align="right">  - </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="extrafiles">extrafiles</a></td><td align="right">2022-03-21 02:29  </td><td align="right">267K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/folder.gif" alt="[DIR]"></td><td><a href="indices/">indices/</a></td><td align="right">2022-03-21 02:22  </td><td align="right">  - </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/compressed.gif" alt="[   ]"></td><td><a href="ls-lR.gz">ls-lR.gz</a></td><td align="right">2022-03-21 02:23  </td><td align="right"> 15M</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/folder.gif" alt="[DIR]"></td><td><a href="pool/">pool/</a></td><td align="right">2000-12-19 20:10  </td><td align="right">  - </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/folder.gif" alt="[DIR]"></td><td><a href="project/">project/</a></td><td align="right">2008-11-17 23:05  </td><td align="right">  - </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/folder.gif" alt="[DIR]"></td><td><a href="tools/">tools/</a></td><td align="right">2012-10-10 16:29  </td><td align="right">  - </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/folder.gif" alt="[DIR]"></td><td><a href="zzz-dists/">zzz-dists/</a></td><td align="right">2021-08-14 13:55  </td><td align="right">  - </td><td>&nbsp;</td></tr>
+   <tr><th colspan="5"><hr></th></tr>
+</table>
+
+<div class="footer">
+<table><tr><td><div class="info">Powered by:</div>&nbsp;&nbsp;&nbsp;</td>
+
+	<td><a href="http://www.tds.net">
+	<img src="/header-inc/tds_120.gif" border="0" align="middle"
+	/></a>&nbsp;&nbsp;&nbsp;</td>
+
+	<td><a href="http://osuosl.org/">
+	<img src="/header-inc/osl_logo.png" border="0" align="middle"
+	/></a>&nbsp;&nbsp;&nbsp;</td>
+
+	<td><center>
+	<a href="http://osuosl.org/contribute" target="_blank">
+	<img src="/header-inc/give6_medium.png" border="0"
+	/></a><br /><div class="info">
+	Your donation powers our service to the FOSS community.
+	</div></center></td></tr></table>
+        <br />
+	
+	<div <a href="http://osuosl.org/">OSUOSL</a> &#169; 2022</div>
+        </div>
+</div>
+</BODY>
+</HTML>
+
