@@ -50,7 +50,7 @@ import { provideAuth, getAuth } from '@angular/fire/auth'
     // },
     {
       provide: AuthService,
-      useClass: FirebaseAuthService,
+      useClass: InMemoryAuthService,
     },
     {
       provide: UiService,
